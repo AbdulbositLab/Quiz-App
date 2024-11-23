@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+.quiz {
+    width: 100px;
+    height: auto;
+    border: 3px solid #666666;
+    margin: 15px;
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz:hover {
+    background: linear-gradient(60deg, #16B0F5 0%, #E70FAA 100%);
+    color: white;
+    border-color: #13B0F5;
+    transform: scale(1.02);
+}
+
+
+.quiz:focus {
+    outline: none; /* Remove focus outline for better aesthetics */
+}
+
+.app {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+h1 {
+    margin-bottom: 25px;
+}
+#question-input{
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.quiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.options-container {
+    width: 90%;
+    height: 35px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 42px;
+}
+.option-input {
+    width: 90%;
+    height: 35px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.submit {
+    width: 50%;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #4044fb;
+    color:white;
+}
+#add-btn, #correct-answer{
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+#add-btn {
+    background: linear-gradient(90deg, #28a745, #85e085); /* Fresh green gradient */
+    color: white; /* Text color */
+    font-weight: 500; /* Slightly bold text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Pointer cursor */
+    transition: 2s ease; /* Smoother hover effect with slower duration */
+}
+
+#add-btn:hover {
+    background: linear-gradient(90deg, #279440, #659370); /* Reverse gradient on hover */
+    color: white; /* Ensure consistent text color */
+    font-weight: 500; /* Keep consistent font weight */
+}
+
+#correct-answer {
+    width: 100px;
+    padding: 4px;
+    font-size: 18px;
+}
+
+/* ----------------------------- */
+.btn-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    color: black;
+    margin: 35px;
+    text-align: center;
+}
+.d {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371); /* Red-orange gradient */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* For other browsers that support this */
+    color: transparent; /* Makes the text color transparent so the gradient shows */
+    font-weight: bold; /* Optional: bold text */
+}
+.e {
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Light blue gradient */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* For other browsers that support this */
+    color: transparent; /* Makes the text color transparent so the gradient shows */
+    font-weight: bold; /* Optional: bold text */
+}
+
+#delete-btn {
+    width: 40%;
+    height: 40px;
+    color: red;
+    background-color: rgb(255, 173, 173);
+}
+#edit-btn {
+    width: 40%;
+    height: 40px;
+    color: white; /* Text color for contrast */
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Light blue gradient */
+    border: none; /* Optional: remove border */
+    border-radius: 8px; /* Optional: rounded corners */
+    font-size: 16px; /* Adjust font size */
+    text-align: center;
+    line-height: 40px; /* Align text vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+#edit-btn:hover {
+    background: linear-gradient(90deg, #3d9cff, #00e8e8); /* Slightly darker gradient on hover */
+}
+
+#delete-btn {
+    width: 40%;
+    height: 40px;
+    color: white; /* Updated text color for better contrast */
+    background: linear-gradient(90deg, #ff5f6d, #ffc371); /* Red-orange gradient */
+    border: none; /* Optional: remove border */
+    border-radius: 8px; /* Optional: rounded corners */
+    font-size: 16px; /* Adjust font size */
+    text-align: center;
+    line-height: 40px; /* Align text vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+#delete-btn:hover {
+    background: linear-gradient(90deg, #ff4b5c, #ffa25c); /* Slightly darker gradient on hover */
+}

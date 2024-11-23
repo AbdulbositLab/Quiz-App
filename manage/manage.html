@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Questions</title>
+    <link rel="stylesheet" href="manage.css">
+</head>
+<body>
+    
+    <a href="../quiz/index.html"><button class="quiz">Quiz!</button></a>
+    <div class="app">
+        <h1>Manage Questions</h1>
+        <form id="question-form">
+            <label>Question:</label><br>
+            <input type="text" id="question-input" required placeholder="Question..." ><br>
+            <label>Answer Options:</label>
+            <div id="options-container">
+                <input type="text" class="option-input" placeholder="Option 1" required>
+                <input type="text" class="option-input" placeholder="Option 2" required>
+                <input type="text" class="option-input" placeholder="Option 3" required>
+                <input type="text" class="option-input" placeholder="Option 4" required>
+            </div>
+            <label>Correct Answer:</label>
+         
+            <input id="correct-answer" type="number" required placeholder="1-4">
+            <button type="button" id="add-btn">Add Question</button>
+        </form>
+
+        <h2><span class="e">Edit</span> or <span class="d">Delete</span></h2>
+        <div class="btn-wrapper">
+            <button type="button" id="edit-btn">✎</button>
+            <button type="button" id="delete-btn">✖</button>
+        </div>
+        
+    </div>
+    <script src="manage.js"></script>
+</body>
+</html>
